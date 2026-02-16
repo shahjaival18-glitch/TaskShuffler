@@ -1,0 +1,1 @@
+Django==4.2.0\ndjangorestframework==3.14.0\npsycopg2-binary==2.9.6\npython-decouple==3.8\nPillow==10.0.0\ncelery==5.3.0\nredis==4.5.5\ndjango-cors-headers==4.2.0\ngunicorn==21.2.0\nwhitenoise==6.5.0
