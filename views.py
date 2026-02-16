@@ -1,0 +1,1 @@
+from rest_framework import viewsets\nfrom .models import Task\nfrom .serializers import TaskSerializer\n\nclass TaskViewSet(viewsets.ModelViewSet):\n    queryset = Task.objects.all()\n    serializer_class = TaskSerializer\n\n    def shuffle_tasks(self):\n        import random\n        tasks = list(self.queryset)\n        random.shuffle(tasks)\n        return tasks
